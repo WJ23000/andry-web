@@ -1,0 +1,7 @@
+# !src
+dist
+public
+./*.js
+assets
+wps.js
+*.js
