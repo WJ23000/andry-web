@@ -11,7 +11,7 @@ import { Vue, Component } from "vue-property-decorator";
 })
 export default class Home extends Vue {
 
-  title = "登录首页"
+  title = "前台"
 }
 </script>
 

@@ -12,16 +12,16 @@ const routes: Array<RouteConfig> = [
 		component: PageOutline,
 		children: [
 			{
-				path: "/about",
-				name: "about",
-				component: About
+				path: "/",
+				name: "home",
+				component: Home
 			}
 		]
 	},
 	{
-		path: "/home",
-		name: "home",
-		component: Home
+		path: "/about",
+		name: "about",
+		component: About
 	}
 ];
 const router = new VueRouter({
