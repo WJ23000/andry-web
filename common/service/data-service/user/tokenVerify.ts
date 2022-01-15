@@ -55,5 +55,6 @@ export class TokenVerifyService {
 	static async tokenAuth({ url }, fn: Function) {
 		TokenVerifyService.setRequest(fn);
 		window.history.replaceState({}, "", url);
+		return;
 	}
 }

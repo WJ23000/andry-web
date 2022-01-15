@@ -1,39 +1,39 @@
 import {
-  Tooltip,
-  Badge,
-  Progress,
-  Radio,
-  Carousel,
-  Checkbox,
-  Col,
-  InputNumber,
-  Spin,
-  Table,
-  DatePicker,
-  Button,
-  Collapse,
-  Popconfirm,
-  FormModel,
-  Icon,
-  Input,
-  Popover,
-  Divider,
-  Dropdown,
-  Tree,
-  Tabs,
-  Menu,
-  Modal,
-  Pagination,
-  message,
-  Tag,
-  Timeline,
-  Row,
-  Select,
-  Slider,
-  Upload,
-  ConfigProvider,
-  Cascader,
-  Switch
+	Tooltip,
+	Badge,
+	Progress,
+	Radio,
+	Carousel,
+	Checkbox,
+	Col,
+	InputNumber,
+	Spin,
+	Table,
+	DatePicker,
+	Button,
+	Collapse,
+	Popconfirm,
+	FormModel,
+	Icon,
+	Input,
+	Popover,
+	Divider,
+	Dropdown,
+	Tree,
+	Tabs,
+	Menu,
+	Modal,
+	Pagination,
+	message,
+	Tag,
+	Timeline,
+	Row,
+	Select,
+	Slider,
+	Upload,
+	ConfigProvider,
+	Cascader,
+	Switch
 } from "ant-design-vue";
 import Vue from "vue";
 
@@ -57,7 +57,7 @@ Vue.use(Row);
 Vue.use(Col);
 Vue.use(Tabs);
 Vue.use(Select);
-Vue.use(Carousel)
+Vue.use(Carousel);
 Vue.use(Select);
 Vue.use(Checkbox);
 Vue.use(Popover);
@@ -73,8 +73,8 @@ Vue.use(Popconfirm);
 Vue.use(Cascader);
 Vue.use(Switch);
 message.config({
-  top: `100px`,
-  maxCount: 1
+	top: `100px`,
+	maxCount: 1
 });
 Vue.prototype.$confirm = Modal.confirm;
 Vue.prototype.$message = message;

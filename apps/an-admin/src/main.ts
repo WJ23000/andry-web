@@ -5,7 +5,10 @@ import store from "./store";
 import "./uiAdapter";
 import "./styles/common.styl";
 import axios from "axios";
-import { RequestService, AdminTokenVerifyService } from "@/an-admin/src/service";
+import {
+	RequestService,
+	AdminTokenVerifyService
+} from "@/an-admin/src/service";
 
 Vue.config.productionTip = false;
 

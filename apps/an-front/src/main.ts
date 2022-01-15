@@ -5,10 +5,7 @@ import store from "./store";
 import "./uiAdapter";
 import "./styles/common.styl";
 import axios from "axios";
-import {
-	RequestService,
-	FrontTokenVerifyService
-} from "@/an-front/src/service";
+import { RequestService, FrontTokenVerifyService } from "@/an-front/src/service";
 
 Vue.config.productionTip = false;
 
@@ -25,6 +22,7 @@ axios.get("./config.json").then(res => {
 	FrontTokenVerifyService.setRequest();
 
 	FrontTokenVerifyService.tokenAuth(() => {
+
 		FrontTokenVerifyService.saveUserPermissions(() => {
 			new Vue({
 				router,
