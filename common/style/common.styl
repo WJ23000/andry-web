@@ -1,0 +1,81 @@
+@import "./scrollbar.styl"
+
+.common-iframe iframe
+  display block !important
+  position static !important
+  width 100% !important
+  height 100% !important
+  opacity 1 !important
+  left auto !important
+  top auto !important
+  overflow visible !important
+  visibility visible !important
+  .component-icon-btn.status_btn
+    display none
+.common-loading
+  height 100%
+  .ant-spin.ant-spin-spinning
+    max-height 100%
+  .ant-spin-blur, .ant-spin-container
+    height 100%
+    display flex
+    align-items center
+    justify-content center
+.custom-warning
+  display inline-block
+  width 15px
+  height 15px
+  margin-top 2px
+.custom-modal-warning
+  width 23px
+//- 多行文本截断
+.text-line-wrap{
+  line-height: 20px;
+  height: 40px;
+  overflow: hidden;
+}
+.text-line-wrap-item{
+  float: right;
+  margin-left: -10px;
+  width: 100%;
+  word-break: break-all;
+}
+.text-line-wrap:before{
+  content: "";
+  width: 10px;
+  height: 60px;
+  float: left;
+}
+.text-line-wrap
+  &:after
+    content:"...";
+    float: right;
+    height: 20px;
+    font-size 12px
+    line-height: 20px;
+    width: 70px;  /*省略号的宽度*/
+    margin-left: -60px; /*为了使盒子不占位置*/
+    position: relative;
+    top: -40px;
+    box-sizing: border-box;
+    left: 100%;
+    text-align: center;
+    background linear-gradient(to right , transparent, #fff 30px)
+.g-table__middle
+  .ant-table-header th
+    height 32px!important
+    background #f2f5fc!important
+    padding 5px 8px!important
+  .ant-table-body
+    overflow-y auto!important
+  .ant-table-fixed-header .ant-table-scroll .ant-table-header
+    margin-bottom 0!important
+    overflow hidden!important
+.mt-18
+  margin-top: 18px
+.g-normal-input
+  color #8A8E99
+  border: none;
+  font-size: 12px;
+  outline: none;
+  background: none;

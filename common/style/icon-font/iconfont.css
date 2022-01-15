@@ -1,0 +1,167 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 2699861 */
+  src: url('iconfont.woff2?t=1633659365529') format('woff2'),
+       url('iconfont.woff?t=1633659365529') format('woff'),
+       url('iconfont.ttf?t=1633659365529') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-course-schedule:before {
+  content: "\e601";
+}
+
+.icon-video:before {
+  content: "\e602";
+}
+
+.icon-special-offer:before {
+  content: "\e603";
+}
+
+.icon-lengthways-carousel:before {
+  content: "\e604";
+}
+
+.icon-course-arrangement:before {
+  content: "\e605";
+}
+
+.icon-image:before {
+  content: "\e606";
+}
+
+.icon-crosswise-carousel:before {
+  content: "\e607";
+}
+
+.icon-down:before {
+  content: "\e7ae";
+}
+
+.icon-up:before {
+  content: "\e7af";
+}
+
+.icon-success:before {
+  content: "\e7ac";
+}
+
+.icon-error:before {
+  content: "\e7ad";
+}
+
+.icon-setting:before {
+  content: "\e7aa";
+}
+
+.icon-ladder:before {
+  content: "\e7ab";
+}
+
+.icon-house:before {
+  content: "\e7a6";
+}
+
+.icon-control:before {
+  content: "\e7a7";
+}
+
+.icon-bookmark:before {
+  content: "\e7a8";
+}
+
+.icon-personage:before {
+  content: "\e7a9";
+}
+
+.icon-filtrate:before {
+  content: "\e7a5";
+}
+
+.icon-expand-folder:before {
+  content: "\e796";
+}
+
+.icon-question-mark:before {
+  content: "\e797";
+}
+
+.icon-export:before {
+  content: "\e798";
+}
+
+.icon-ascending:before {
+  content: "\e799";
+}
+
+.icon-descend:before {
+  content: "\e79a";
+}
+
+.icon-folder:before {
+  content: "\e79b";
+}
+
+.icon-expand-all:before {
+  content: "\e79c";
+}
+
+.icon-date:before {
+  content: "\e79d";
+}
+
+.icon-sort:before {
+  content: "\e79e";
+}
+
+.icon-switch:before {
+  content: "\e79f";
+}
+
+.icon-copy:before {
+  content: "\e7a0";
+}
+
+.icon-edit:before {
+  content: "\e7a1";
+}
+
+.icon-add-folder:before {
+  content: "\e7a2";
+}
+
+.icon-reduce:before {
+  content: "\e7a3";
+}
+
+.icon-voice:before {
+  content: "\e7a4";
+}
+
+.icon-delete:before {
+  content: "\e791";
+}
+
+.icon-edit02:before {
+  content: "\e792";
+}
+
+.icon-search:before {
+  content: "\e793";
+}
+
+.icon-add:before {
+  content: "\e794";
+}
+
+.icon-refresh:before {
+  content: "\e795";
+}
+
