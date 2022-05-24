@@ -1,7 +1,7 @@
 <template lang="pug">
   div.page-header.flex.justify-start.px4
     img.logo(:src="logo")
-    div.f2 Andry后台管理系统
+    div.f2 后台管理系统
 </template>
 
 <script lang="ts">
@@ -18,13 +18,13 @@ export default class PageHeader extends Vue {
 <style lang="stylus" scoped>
 .page-header
   width 100%
-  height 68px
-  line-height 68px
-  background #ffffff
-  color #000000
+  height 48px
+  line-height 48px
+  background #000000
+  color #ffffff
   border-bottom 1px solid #edf2f5
   .logo 
-    width 36px
-    height 36px
+    width 30px
+    height 30px
     margin-right 12px
 </style>

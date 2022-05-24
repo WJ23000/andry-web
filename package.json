@@ -6,7 +6,7 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint --fix",
-    "an-admin": "vue-cli-service serve --app=an-admin",
+    "an-end": "vue-cli-service serve --app=an-end",
     "an-front": "vue-cli-service serve --app=an-front",
     "login": "vue-cli-service serve --app=login"
   },

@@ -30,10 +30,10 @@ const router = new VueRouter({
 });
 
 // 处理去往的路由跟上次进入的路由相同
-const VueRouterPush: any = VueRouter.prototype.push;
-VueRouter.prototype.push = function push(to) {
-  return VueRouterPush.call(this, to).catch((err) => err);
-};
+// const VueRouterPush: any = VueRouter.prototype.push;
+// VueRouter.prototype.push = function push(to) {
+//   return VueRouterPush.call(this, to).catch((err) => err);
+// };
 
 // 路由前置钩子判断路由是否需要登录
 // router.beforeEach((to, from, next) => { 

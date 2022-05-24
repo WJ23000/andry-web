@@ -1,9 +1,9 @@
 {
-  "BASE_API": "http://ip/",
-  "NODE_API": "http://ip:port/",
-  "HOST": {
-    "LOGIN": "http://an.local-dev.andry.com:7080/login/",
-    "FRONT": "http://an.local-dev.andry.com:7080",
-    "ADMIN": "http://an.local-dev.andry.com:7080/admin/"
-  }
+	"BASE_API": "http://ip/",
+	"NODE_API": "http://ip:port/",
+	"HOST": {
+		"LOGIN": "http://localhost:8892/login/",
+		"FRONT": "http://localhost:8890",
+		"END": "http://localhost:8891/admin/"
+	}
 }

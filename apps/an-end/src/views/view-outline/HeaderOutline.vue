@@ -1,8 +1,8 @@
 <template lang="pug">
-  div.page-outline.flex.column
+  div.header-outline.flex.column.h100
     Header
     a-config-provider(:locale="locale")
-      router-view.w100
+      router-view
 </template>
 
 <script lang="ts">
@@ -15,13 +15,9 @@ import Header from "./components/Header.vue";
 		Header
 	}
 })
-export default class Home extends Vue {
+export default class HeaderOutline extends Vue {
 	locale = zhCN;
 }
 </script>
 
-<style lang="stylus" scoped>
-.page-outline
-  height: 100%;
-  min-width: 1280px;
-</style>
+<style lang="stylus" scoped></style>

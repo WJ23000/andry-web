@@ -1,8 +1,8 @@
 import Vue from "vue";
 import VueRouter, { RouteConfig } from "vue-router";
 import PageOutline from "@/login/src/views/view-outline/PageOutline.vue";
-import Home from "@/login/src/views/home/Index.vue";
-import About from "@/login/src/views/about/Index.vue";
+import Login from "@/login/src/views/Login.vue";
+import About from "@/login/src/views/about/About.vue";
 
 Vue.use(VueRouter);
 
@@ -13,8 +13,8 @@ const routes: Array<RouteConfig> = [
 		children: [
 			{
 				path: "/",
-				name: "home",
-				component: Home
+				name: "login",
+				component: Login
 			}
 		]
 	},

@@ -12,7 +12,7 @@ export default class BigIntJsonService {
 			`$1:"$2"$3`
 		);
 
-		str = str.replace(/("[^"\s]+")\s*:\s*(\[[^\[\]]+])\s*(,?)/g, function(
+		str = str.replace(/("[^"\s]+")\s*:\s*(\[[^\\]+])\s*(,?)/g, function(
 			string
 		) {
 			let str = string;
