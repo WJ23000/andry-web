@@ -4,6 +4,7 @@ import HeaderOutline from "@/an-end/src/views/view-outline/HeaderOutline.vue";
 import SidebarOutline from "@/an-end/src/views/view-outline/SidebarOutline.vue";
 import Home from "@/an-end/src/views/home/Index.vue";
 import About from "@/an-end/src/views/about/Index.vue";
+import { accessControlRouter } from "./access-control";
 
 Vue.use(VueRouter);
 
@@ -20,7 +21,8 @@ const routes: Array<RouteConfig> = [
 						path: "/",
 						name: "home",
 						component: Home
-					}
+					},
+					...accessControlRouter
 				]
 			}
 		]
