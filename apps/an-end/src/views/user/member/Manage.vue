@@ -10,9 +10,9 @@ import { Vue, Component } from "vue-property-decorator";
 	components: {
   }
 })
-export default class UserManage extends Vue {
+export default class MemberManage extends Vue {
 
-  title = "用户管理"
+  title = "成员管理"
 }
 </script>
 

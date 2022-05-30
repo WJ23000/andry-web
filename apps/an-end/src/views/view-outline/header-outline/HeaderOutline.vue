@@ -8,7 +8,7 @@
 <script lang="ts">
 import { Vue, Component } from "vue-property-decorator";
 import zhCN from "ant-design-vue/lib/locale-provider/zh_CN";
-import Header from "./components/Header.vue";
+import Header from "./Header.vue";
 
 @Component({
 	components: {

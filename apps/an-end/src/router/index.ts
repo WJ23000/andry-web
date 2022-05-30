@@ -1,10 +1,15 @@
 import Vue from "vue";
 import VueRouter, { RouteConfig } from "vue-router";
-import HeaderOutline from "@/an-end/src/views/view-outline/HeaderOutline.vue";
-import SidebarOutline from "@/an-end/src/views/view-outline/SidebarOutline.vue";
+import HeaderOutline from "@/an-end/src/views/view-outline/header-outline/HeaderOutline.vue";
+import LeftSiderOutline from "@/an-end/src/views/view-outline/LeftSiderOutline.vue";
 import Home from "@/an-end/src/views/home/Index.vue";
 import About from "@/an-end/src/views/about/Index.vue";
-import { accessControlRouter } from "./access-control";
+import { userManageRouter } from "./user";
+import { materialManageRouter, materialEditRouter } from "./material";
+import { courseManageRouter, courseEditRouter } from "./course";
+import { examManageRouter, examEditRouter } from "./exam";
+import { activityManageRouter, activityEditRouter } from "./activity";
+import { orderManageRouter, orderEditRouter } from "./order";
 
 Vue.use(VueRouter);
 
@@ -15,14 +20,19 @@ const routes: Array<RouteConfig> = [
 		children: [
 			{
 				path: "/",
-				component: SidebarOutline,
+				component: LeftSiderOutline,
 				children: [
 					{
-						path: "/",
+						path: "/home",
 						name: "home",
 						component: Home
 					},
-					...accessControlRouter
+					...userManageRouter,
+					...materialManageRouter,
+					...courseManageRouter,
+					...examManageRouter,
+					...activityManageRouter,
+					...orderManageRouter
 				]
 			}
 		]

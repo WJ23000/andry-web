@@ -33,7 +33,8 @@ import {
   Upload,
   ConfigProvider,
   Cascader,
-  Switch
+  Switch,
+  Layout
 } from "ant-design-vue";
 import Vue from "vue";
 
@@ -72,6 +73,7 @@ Vue.use(Progress);
 Vue.use(Popconfirm);
 Vue.use(Cascader);
 Vue.use(Switch);
+Vue.use(Layout);
 message.config({
   top: `100px`,
   maxCount: 1

@@ -20,9 +20,10 @@ export default class PageHeader extends Vue {
   width 100%
   height 48px
   line-height 48px
-  background #000000
-  color #ffffff
-  border-bottom 1px solid #edf2f5
+  background #ffffff
+  color #000000
+  z-index 999
+  box-shadow 0px -16px 12px 10px #000000
   .logo 
     width 30px
     height 30px
