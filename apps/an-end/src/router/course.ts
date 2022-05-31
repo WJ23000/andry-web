@@ -1,8 +1,8 @@
 /**
  * 课程管理
  */
- import courseManage from "@/an-end/src/views/home/Index.vue";
- import courseEdit from "@/an-end/src/views/home/Index.vue";
+ import courseManage from "@/an-end/src/views/course/Manage.vue";
+ import courseEdit from "@/an-end/src/views/course/Edit.vue";
  
  const courseManageRouter = [
    {

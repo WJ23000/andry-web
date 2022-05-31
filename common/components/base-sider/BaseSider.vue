@@ -17,29 +17,25 @@
 					a-menu-item(v-if="!item.children", :key="item.path")
 						a-icon(v-if="item.icon", :type="item.icon")
 						span {{ item.title }}
-					a-sub-menu(v-else, :key="item.path")
-						span(slot="title")
-							a-icon(v-if="item.icon", :type="item.icon")
-							span {{ item.title }}
-						template(v-for="vv in item.children")
-							a-menu-item(v-if="!vv.children", :key="vv.path")
-								a-icon(v-if="vv.icon", :type="vv.icon")
-								span.title {{ vv.title }}
+					Sider(v-else, :key="item.path", :menuInfo="item")
 </template>
 
 <script lang="ts">
 import { Vue, Component } from "vue-property-decorator";
+import Sider  from "./components/Sider.vue"
 
 @Component({
-	components: {}
+	components: {
+		Sider
+	}
 })
 export default class BaseSider extends Vue {
 	// 菜单缩进
-	inlineIndent = 12;
+	inlineIndent = 22;
 	// 默认不折叠
 	collapsed = false;
 	// 全部顶级父节点,用来控制所有父级菜单只展开其中的一项，可用遍历菜单信息进行赋值
-	rootSubmenuKeys = ["/home", "/1", "/2"];
+	rootSubmenuKeys = ["/", "/user", "/content", "/business"];
 	// 展开的父菜单项
 	openKeys: string[] = [];
 	menuList = [
@@ -47,12 +43,12 @@ export default class BaseSider extends Vue {
 			id: "sub1",
 			title: "首页",
 			icon: "home",
-			path: "/home"
+			path: "/"
 		},
 		{
 			id: "sub1",
 			title: "访问控制",
-			icon: "home",
+			icon: "desktop",
 			path: "/user",
 			children: [
 				{
@@ -134,7 +130,7 @@ export default class BaseSider extends Vue {
 			id: "sub4",
 			title: "运营管理",
 			icon: "calendar",
-			path: "/",
+			path: "/business",
 			children: [
 				{
 					id: 10,
@@ -195,8 +191,6 @@ export default class BaseSider extends Vue {
 <style lang="stylus" scoped>
 .base-sider
 	background #ffffff
-	.title
-		margin-left 12px
 	.ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected
 		background #f6f7fb
 </style>

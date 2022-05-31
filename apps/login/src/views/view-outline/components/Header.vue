@@ -1,7 +1,7 @@
 <template lang="pug">
   div.page-header.flex.justify-start.px4
     img.logo(:src="logo")
-    div.f2 Andry后台管理系统
+    div.f2 怀宁智慧互连管理系统
 </template>
 
 <script lang="ts">

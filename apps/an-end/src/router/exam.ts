@@ -1,10 +1,10 @@
 /**
  * 考试管理
  */
-import questionManage from "@/an-end/src/views/home/Index.vue";
-import questionEdit from "@/an-end/src/views/home/Index.vue";
-import paperManage from "@/an-end/src/views/home/Index.vue";
-import paperEdit from "@/an-end/src/views/home/Index.vue";
+import questionManage from "@/an-end/src/views/exam/question/Manage.vue";
+import questionEdit from "@/an-end/src/views/exam/question/Edit.vue";
+import paperManage from "@/an-end/src/views/exam/paper/Manage.vue";
+import paperEdit from "@/an-end/src/views/exam/paper/Edit.vue";
 
 const examManageRouter = [
 	{

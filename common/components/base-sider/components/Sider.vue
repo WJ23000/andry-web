@@ -1,32 +1,25 @@
-<template lang="pug">
-div.sidebar-child
-  a-sub-menu(
-    :key="menuInfo.path")
-    span(slot="title")
-      i(:class="menuInfo.icon")
-      span {{ menuInfo.title }}
-    template(v-for="item in menuInfo.children")
-      a-menu-item(v-if="!item.children", :key="item.path")
-        i(:class="item.icon")
-        span {{ item.title }}
-      sub-menu(v-else, :key="item.path", :menu-info="item")
+<template lang="pug" functional>
+a-sub-menu(:key="props.menuInfo.path")
+  span(slot="title")
+    a-icon(v-if="props.menuInfo.icon", :type="props.menuInfo.icon")
+    span {{ props.menuInfo.title }}
+  template(v-for="item in props.menuInfo.children")
+    a-menu-item(v-if="!item.children", :key="item.path")
+      a-icon(v-if="item.icon", :type="item.icon")
+      span {{ item.title }}
+    Sider(v-else, :key="item.path", :menuInfo="item")
 </template>
 
 <script lang="ts">
 import { Vue, Component, Prop } from "vue-property-decorator";
 
 @Component({
+	name: "Sider",
 	components: {}
 })
-export default class SidebarChild extends Vue {
+export default class Sider extends Vue {
 	@Prop()
 	menuInfo;
-
-	isSubMenu = true;
-
-  created(){
-    console.log("数据", this.menuInfo)
-  }
 }
 </script>
 

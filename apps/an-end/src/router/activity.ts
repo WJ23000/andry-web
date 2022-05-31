@@ -1,8 +1,8 @@
 /**
  * 活动管理
  */
- import activityManage from "@/an-end/src/views/home/Index.vue";
- import activityEdit from "@/an-end/src/views/home/Index.vue";
+ import activityManage from "@/an-end/src/views/activity/Manage.vue";
+ import activityEdit from "@/an-end/src/views/activity/Edit.vue";
  
  const activityManageRouter = [
    {

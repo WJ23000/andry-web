@@ -1,5 +1,5 @@
 <template lang="pug">
-  div.member-manage
+  div.order-edit
     div {{ title }}
 </template>
 
@@ -9,8 +9,8 @@ import { Vue, Component } from "vue-property-decorator";
 @Component({
 	components: {}
 })
-export default class MemberManage extends Vue {
-	title = "成员管理";
+export default class OrderEdit extends Vue {
+	title = "订单编辑";
 }
 </script>
 

@@ -2,6 +2,7 @@ import Vue from "vue";
 import VueRouter, { RouteConfig } from "vue-router";
 import HeaderOutline from "@/an-end/src/views/view-outline/header-outline/HeaderOutline.vue";
 import LeftSiderOutline from "@/an-end/src/views/view-outline/LeftSiderOutline.vue";
+import TopBackOutline from "@/an-end/src/views/view-outline/TopBackOutline.vue";
 import Home from "@/an-end/src/views/home/Index.vue";
 import About from "@/an-end/src/views/about/Index.vue";
 import { userManageRouter } from "./user";
@@ -23,7 +24,7 @@ const routes: Array<RouteConfig> = [
 				component: LeftSiderOutline,
 				children: [
 					{
-						path: "/home",
+						path: "/",
 						name: "home",
 						component: Home
 					},
@@ -33,6 +34,17 @@ const routes: Array<RouteConfig> = [
 					...examManageRouter,
 					...activityManageRouter,
 					...orderManageRouter
+				]
+			},
+			{
+				path: "/",
+				component: TopBackOutline,
+				children: [
+					...materialEditRouter,
+					...courseEditRouter,
+					...examEditRouter,
+					...activityEditRouter,
+					...orderEditRouter
 				]
 			}
 		]

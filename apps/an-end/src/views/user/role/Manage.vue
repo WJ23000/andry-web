@@ -7,12 +7,10 @@
 import { Vue, Component } from "vue-property-decorator";
 
 @Component({
-	components: {
-  }
+	components: {}
 })
 export default class RoleManage extends Vue {
-
-  title = "角色管理"
+	title = "角色管理";
 }
 </script>
 

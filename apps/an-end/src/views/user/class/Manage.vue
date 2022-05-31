@@ -7,12 +7,10 @@
 import { Vue, Component } from "vue-property-decorator";
 
 @Component({
-	components: {
-  }
+	components: {}
 })
 export default class ClassMange extends Vue {
-
-  title = "班级管理"
+	title = "班级管理";
 }
 </script>
 

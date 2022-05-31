@@ -105,9 +105,9 @@ export default class Login extends Vue {
 			if (valid) {
 				console.log("form", this.form);
 				if (this.form.username == "admin") {
-					this.toPage("ADMIN");
+					this.toPage("END");
 				} else {
-					this.toPage("WEB");
+					this.toPage("FRONT");
 				}
 			} else {
 				return false;

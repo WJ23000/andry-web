@@ -1,8 +1,8 @@
 /**
  * 订单管理
  */
-import orderManage from "@/an-end/src/views/home/Index.vue";
-import orderEdit from "@/an-end/src/views/home/Index.vue";
+import orderManage from "@/an-end/src/views/order/Manage.vue";
+import orderEdit from "@/an-end/src/views/order/Edit.vue";
 
 const orderManageRouter = [
 	{

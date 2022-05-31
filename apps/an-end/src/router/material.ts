@@ -1,8 +1,8 @@
 /**
  * 素材管理
  */
- import materialManage from "@/an-end/src/views/home/Index.vue";
- import materialEdit from "@/an-end/src/views/home/Index.vue";
+ import materialManage from "@/an-end/src/views/material/Manage.vue";
+ import materialEdit from "@/an-end/src/views/material/Edit.vue";
  
  const materialManageRouter = [
    {

@@ -7,22 +7,10 @@
 import { Vue, Component } from "vue-property-decorator";
 
 @Component({
-	components: {
-  }
+	components: {}
 })
 export default class Home extends Vue {
-
-  title = "后台"
-  treeConfig = {
-    isSearch: true,
-    mode: "read",
-    grade: 2
-  }
-
-  // 当前选中的节点
-  onChangeCurrentNode(value) {
-    console.log("当前选中节点", value);
-  }
+	title = "主页";
 }
 </script>
 
