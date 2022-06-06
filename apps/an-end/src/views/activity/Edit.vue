@@ -11,6 +11,15 @@ import { Vue, Component } from "vue-property-decorator";
 })
 export default class ActivityEdit extends Vue {
 	title = "活动编辑";
+
+  onEdit() {
+		this.$router.push({
+			name: "activityEdit",
+			query: {
+				id: "111"
+			}
+		});
+	}
 }
 </script>
 

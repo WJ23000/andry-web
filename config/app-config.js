@@ -1,12 +1,12 @@
 //各个项目的默认配置
 module.exports = {
-	"an-front": {
+	login: {
 		port: 8890
 	},
-	"an-end": {
+	"an-front": {
 		port: 8891
 	},
-	login: {
+	"an-end": {
 		port: 8892
 	},
 	default: {

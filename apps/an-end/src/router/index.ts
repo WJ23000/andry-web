@@ -5,6 +5,7 @@ import LeftSiderOutline from "@/an-end/src/views/view-outline/LeftSiderOutline.v
 import TopBackOutline from "@/an-end/src/views/view-outline/TopBackOutline.vue";
 import Home from "@/an-end/src/views/home/Index.vue";
 import About from "@/an-end/src/views/about/Index.vue";
+import { messageRouter } from "./message";
 import { userManageRouter } from "./user";
 import { materialManageRouter, materialEditRouter } from "./material";
 import { courseManageRouter, courseEditRouter } from "./course";
@@ -28,6 +29,7 @@ const routes: Array<RouteConfig> = [
 						name: "home",
 						component: Home
 					},
+					...messageRouter,
 					...userManageRouter,
 					...materialManageRouter,
 					...courseManageRouter,

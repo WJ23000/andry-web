@@ -11,6 +11,14 @@ import { Vue, Component } from "vue-property-decorator";
 })
 export default class PaperEdit extends Vue {
 	title = "试卷编辑";
+  onEdit() {
+		this.$router.push({
+			name: "paperEdit",
+			query: {
+				id: "111"
+			}
+		});
+	}
 }
 </script>
 

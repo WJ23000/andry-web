@@ -11,6 +11,15 @@ import { Vue, Component } from "vue-property-decorator";
 })
 export default class CourseEdit extends Vue {
 	title = "课程编辑";
+
+  onEdit() {
+		this.$router.push({
+			name: "courseEdit",
+			query: {
+				id: "111"
+			}
+		});
+	}
 }
 </script>
 

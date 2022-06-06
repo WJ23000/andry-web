@@ -1,17 +1,20 @@
 <template lang="pug">
   div.top-back-header.flex.justify-start.px4
     a-icon.f2.mr3(type="left", @click="onBack")
-    div.f4 返回
+    div.f4.mr4 {{ title }}
     slot
 </template>
 
 <script lang="ts">
-import { Vue, Component } from "vue-property-decorator";
+import { Vue, Component, Prop } from "vue-property-decorator";
 
 @Component({
 	components: {}
 })
-export default class TopBackHeader extends Vue {
+export default class Header extends Vue {
+	@Prop({ default: "返回" })
+	title!: string;
+
 	onBack() {
 		this.$router.back();
 	}

@@ -1,3 +1,5 @@
-import Sidebar from "./Sidebar.vue";
+import EditView from "./edit-view/EditView.vue";
 
-export { Sidebar };
+import { BaseSider, Message } from "./commonAdapter";
+
+export { EditView, BaseSider, Message };

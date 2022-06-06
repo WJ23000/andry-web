@@ -2,7 +2,7 @@
   div.header-outline.flex.column.h100
     Header
     a-config-provider(:locale="locale")
-      router-view
+      router-view.overflow-y
 </template>
 
 <script lang="ts">

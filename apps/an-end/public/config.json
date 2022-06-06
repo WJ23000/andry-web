@@ -2,8 +2,8 @@
 	"BASE_API": "http://ip/",
 	"NODE_API": "http://ip:port/",
 	"HOST": {
-		"LOGIN": "http://localhost:8892/",
-		"FRONT": "http://localhost:8890",
-		"END": "http://localhost:8891/"
+		"LOGIN": "http://localhost:8890/",
+		"FRONT": "http://localhost:8891/",
+		"END": "http://localhost:8892/"
 	}
 }

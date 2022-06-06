@@ -3,8 +3,8 @@ const process = require("process");
 const config = require("./config/app-config");
 const argv = require("minimist")(process.argv.slice(2));
 const chalk = require("chalk");
-
-// console.log("process.argv",argv);
+const BundleAnalyzerPlugin = require("webpack-bundle-analyzer")
+	.BundleAnalyzerPlugin;
 
 const appName = argv.app;
 
@@ -15,8 +15,6 @@ if (!appName) {
 
 const pageConfig = require("./config/pageConfig")(appName);
 const appConfig = config[appName] || config["default"];
-
-// process.exit(0);
 
 module.exports = {
 	pages: pageConfig.pages,
@@ -34,6 +32,33 @@ module.exports = {
 				}
 			]
 		]);
+
+		config.plugin("CompressionPlugin").use(
+			new CompressionPlugin({
+				test: /\.js$|\.png$|\.jpg$|\.mp4$|\.css/,
+				threshold: 10240, // 大于10k进行压缩
+				minRatio: 0.8, // 压缩率小于0.8才会压缩
+				deleteOriginalAssets: false
+			})
+		);
+
+		// 生成代码分析报告
+		// config.plugin("bundleAnalyzerPlugin").use(new BundleAnalyzerPlugin());
+	},
+	css: {
+		loaderOptions: {
+			less: {
+				lessOptions: {
+					// If you are using less-loader@5 please spread the lessOptions to options directly
+					modifyVars: {
+						"primary-color": "#1DA57A",
+						"link-color": "#1DA57A",
+						"border-radius-base": "2px"
+					},
+					javascriptEnabled: true
+				}
+			}
+		}
 	},
 	devServer: {
 		disableHostCheck: true,

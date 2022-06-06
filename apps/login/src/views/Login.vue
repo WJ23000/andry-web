@@ -1,9 +1,9 @@
 <template lang="pug">
-  div.end-login
+  div.login
     div.login-bj(:style="bgImg")
       div.login-content.flex.justify-center.h100
         div.login-from.bg-white
-          div.private-title 登录
+          div.title 登录
           a-form-model.form-model.mt4.mb36(
             ref="ruleForm",
             :model="form",
@@ -122,47 +122,25 @@ export default class Login extends Vue {
 </script>
 
 <style lang="stylus" scoped>
-.end-login {
-  flex: 1;
-  height: 100%;
-  .login-bj {
-    padding: 64px 0;
-    flex: 1;
-    width: 100%;
-    height: 100%;
-  }
-  .login-content {
-    height: auto;
-    align-items: flex-start;
-    margin-top: 40px;
-  }
-  .mt80 {
-    margin-top: 80px;
-  }
-}
-.login-title {
-  margin-right: 170px;
-  .title {
-    font-size: 28px;
-    line-height: 46px;
-    font-weight: bold;
-    .pt {
-      color: #5E7CE0;
-    }
-  }
-  .banner {
-    margin-top: 60px;
-    width: 496px;
-  }
-}
-.private-title {
-  margin-bottom: 36px;
-  font-size: 16px;
-  height: 48px;
-  line-height: 46px;
-  text-align: center;
-  border-bottom: 1px solid #d9d9d9;
-}
+.login
+  flex 1
+  height 100%
+  .login-bj
+    padding 64px 0
+    flex 1
+    width 100%
+    height 100%
+  .login-content
+    height auto
+    align-items flex-start
+    margin-top 40px
+.title
+  margin-bottom 36px
+  font-size 16px
+  height 48px
+  line-height 46px
+  text-align center
+  border-bottom 1px solid #d9d9d9
 .login-from {
   width: 428px
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -174,10 +152,10 @@ export default class Login extends Vue {
       font-size: 12px;
     }
     a {
-      color: #7693F5;
+      color: #1890ff;
     }
     a:hover {
-      color: #7693F5;
+      color: #1890ff;
     }
   }
   .login-icon {
@@ -186,15 +164,6 @@ export default class Login extends Vue {
   }
   .form-model, .login-btn {
     padding: 0px 40px;
-  }
-  .forget-password {
-    float: right;
-    a {
-      color: #252B3A;
-    }
-    a:hover {
-      color: #7693F5;
-    }
   }
   .mb60 {
     margin-bottom: 60px;
