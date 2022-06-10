@@ -3,6 +3,7 @@ const process = require("process");
 const config = require("./config/app-config");
 const argv = require("minimist")(process.argv.slice(2));
 const chalk = require("chalk");
+const CompressionPlugin = require("compression-webpack-plugin");
 const BundleAnalyzerPlugin = require("webpack-bundle-analyzer")
 	.BundleAnalyzerPlugin;
 

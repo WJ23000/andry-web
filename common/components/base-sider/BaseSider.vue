@@ -7,7 +7,7 @@
 			collapsible)
 			a-menu(
 				:inlineIndent="inlineIndent",
-				:defaultSelectedKeys="defaultSelectedKeys",
+				:defaultSelectedKeys="[$route.path]",
 				:openKeys="openKeys",
 				mode="inline",
 				:inline-collapsed="collapsed",
@@ -38,21 +38,11 @@ export default class BaseSider extends Vue {
 	// 默认不折叠
 	collapsed = false;
 	// 全部顶级父节点,用来控制所有父级菜单只展开其中的一项，可用遍历菜单信息进行赋值
-	rootSubmenuKeys = ["/", "/control", "/content", "/business"];
+	rootSubmenuKeys = ["/", "/control", "/content", "/business", "/message"];
 	// 展开的父菜单项
 	openKeys: string[] = [];
 	// 选中的子菜单项
-	// defaultSelectedKeys: string[] = [];
-
-	// @Watch("route", { immediate: true, deep: true })
-	// onRouteChange() {
-	// 	this.defaultSelectedKeys = [this.$route.path];
-	// }
-
-	get defaultSelectedKeys() {
-		console.log("触发了不");
-		return [this.$route.path];
-	}
+	defaultSelectedKeys = [];
 
 	created() {
 		// 将从缓存中取出openKeys
